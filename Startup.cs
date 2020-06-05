@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using AutoMapper;
+using FooBar.Customer.Service.Dxos;
 using FooBar.Data;
 using FooBar.Options;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -41,6 +42,9 @@ namespace FooBar
             
             services.AddScoped<ICommanderRepository, SqlCommanderRepository>();
             // services.AddScoped<ICommanderRepository, MockCommanderRepository>();
+            
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddScoped<ICustomerDxos, CustomerDxos>();
             
             var jwtSettings = new JwtSettings();
             Configuration.Bind(nameof(jwtSettings), jwtSettings);

@@ -6,6 +6,7 @@
 
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="MediatR" Version="8.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.4" />
     <PackageReference Include="Microsoft.AspNetCore.JsonPatch" Version="3.1.4" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.4" />
@@ -18,6 +19,16 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.4.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="5.1.1" />
     <PackageReference Include="Swashbuckle.AspNetCore.Newtonsoft" Version="5.4.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Customer\API\Properties" />
+    <Folder Include="Customer\Data\EntityConfigurations" />
+    <Folder Include="Customer\Data\IRepositories" />
+    <Folder Include="Customer\Data\Repositories" />
+    <Folder Include="Customer\Domain\Models" />
+    <Folder Include="Customer\Domain\Queries" />
+    <Folder Include="Customer\Service\Subscribers" />
   </ItemGroup>
 
 
